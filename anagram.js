@@ -14,7 +14,7 @@ class Anagram {
 
   compare(str) {
     if (this.string.toLowerCase() === str.toLowerCase()) return false;
-		if (str.length !== this.string.length) return false;
+    if (str.length !== this.string.length) return false;
     let test = this.string.toLowerCase().slice().split('');
     let str1 = str.slice().toLowerCase().split('');
     for (let i = 0; i < test.length; i++) {
